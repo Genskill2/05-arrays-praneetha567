@@ -18,7 +18,7 @@ int min(int b[],int n2)
 {int min1,i;
  min1=b[0];
  for(i=1;i<n2;i++)
-  {if(b[i]>min1)
+  {if(b[i]<min1)
    min1=b[i];
   }
  return min1;
@@ -69,16 +69,16 @@ int isprime(int i)
 int factors(int n5,int f[])
  {int count=0;
    int i=2;
-   while(i<n)
+   while(i<n5)
    {
-     if(n%i==0)
+     if(n5%i==0)
      if(isprime(i)==1)
-     { a[count]=i;
+     { f[count]=i;
        count++;
-          n=n/i;
-          if(isprime(n)==1)
+          n5=n5/i;
+          if(isprime(n5)==1)
           {
-           a[count++]=n;
+           f[count++]=n5;
            break;
           }
           i=2;
