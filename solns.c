@@ -66,19 +66,19 @@ int isprime(int i)
 }
 
        
-int factors(int n5,int f[])
+int factors(int n,int f[])
  {int count=0;
    int i=2;
-   while(i<n5)
+   while(i<n)
    {
-     if(n5%i==0)
+     if(n%i==0)
      if(isprime(i)==1)
      { f[count]=i;
        count++;
-          n5=n5/i;
-          if(isprime(n5)==1)
+          n=n/i;
+          if(isprime(n)==1)
           {
-           f[count++]=n5;
+           f[count++]=n;
            break;
           }
           i=2;
