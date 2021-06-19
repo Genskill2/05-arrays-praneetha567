@@ -66,19 +66,19 @@ int isprime(int i)
 }
 
        
-int factors(int n,int e[])
+int factors(int n,int a[])
  {int count=0;
    int i=2;
    while(i<n)
    {
      if(n%i==0)
      if(isprime(i)==1)
-     { e[count]=i;
+     { a[count]=i;
        count++;
           n=n/i;
           if(isprime(n)==1)
           {
-           e[count++]=n;
+           a[count++]=n;
            break;
           }
           i=2;
