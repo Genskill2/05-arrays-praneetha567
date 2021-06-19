@@ -43,7 +43,7 @@ int mode(int d[],int n4)
    }
   if(count>maxcount)
   {maxcount=count;
-   maxvalue=d[i];)
+   maxvalue=d[i];
   }
  }
  return maxvalue;
